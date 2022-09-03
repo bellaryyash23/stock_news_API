@@ -57,8 +57,8 @@ if stk_change < 5:
              f"Heading:{headlines[0]}\nBrief:{brief[0]}\n\n"
              f"Heading:{headlines[1]}\nBrief:{brief[1]}\n\n"
              f"Heading:{headlines[2]}\nBrief:{brief[2]}",
-        from_='+12675441487',
-        to='+918999697807'
+        from_= os.environ.get("TWO_NO"),
+        to= os.environ.get("MOB_NO")
     )
 
     print(message.status)
